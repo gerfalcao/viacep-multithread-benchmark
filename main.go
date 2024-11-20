@@ -25,12 +25,24 @@ func getCep(url string, ch chan string) {
 func main() {
 
 	if len(os.Args) < 2 {
-		fmt.Println(`Favor rodar o comando $ go run main.go <cep>`)
+		fmt.Println(`
+
+		Fala avaliador! ;D
+
+		Favor rodar o comando $ go run main.go <cep>
+		Exemplo: $ go run main.go 01001000
+						
+						`)
 		os.Exit(1)
 	}
 	
-	if len(os.Args) > 3 {
-		fmt.Println("Informe somente um cep")
+	if len(os.Args) > 2 {
+		fmt.Println(`
+
+		Fala avaliador!
+		Informe somente um cep
+					
+					`)
 		os.Exit(1)
 	}
 
